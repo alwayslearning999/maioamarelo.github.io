@@ -10,39 +10,19 @@
      <link rel="preconnect" href="https://fonts.googleapis.com"><!--fonte d footer-->
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--fonte do footer -->
      <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"><!--fonte dofooterf -->
-    <title>Bootstrap demo</title>
+    <title>MaioAmarelo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-      
-      *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-     
-      
-      
-      body{
-    
-        margin: 0;
-        padding: 0;
-      }
       .nav-itens{
         list-style: none;
         display: flex;
-        
-    
+
       }
       .nav-itens>li>a{
         padding-left: 25px;
         color: #fffefe;
         text-decoration: none;
-        font-size: 17px;
-        font-family: "Shrikhand", serif;
-
-        
-         
-    
+        font-size: 15px;
       }
       nav{
         display: flex;
@@ -50,13 +30,10 @@
         top: 0;
         left: 0;
         z-index: 1000;
-        background-color: #000000;
-       
+        background-color: #393939;
         padding: 20px;
         position: fixed;
-        width: 100%;
-        
-        
+        width: 100%; 
       }
       h1{
         font-size: 30px;
@@ -66,24 +43,22 @@
       section#inicio{
         height: 100vh;
         padding: 20px;
+        
       }
       section#meio{
        
         padding:20px ;
+        background: rgb(0,0,0);
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 34%, rgba(22,22,22,1) 41%, rgba(51,51,51,1) 49%, rgba(71,71,71,1) 55%, rgba(194,194,194,1) 74%, rgba(255,255,255,1) 93%);
 
       }
-      section #fim{
-        
+      section #fim{ 
         height:100vh ;
         padding:20px ;
-    
       }
-      body{
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgb(66, 94, 146) 46%, rgb(67, 164, 175) 100%);
-}
+      
       footer{
-
         display: flex;
         justify-content:space-evenly ;
         left: 0;
@@ -92,56 +67,49 @@
         padding: 70px;
         width: 100%;
         color: aliceblue;
-        
-
-      
         bottom: 0;
       }
       #texto{
         padding: 80px;
         font-size: 40px;
-      
-      
-    
-
+        color: rgb(255, 255, 255);
       }
       .segundaParte{
        /* padding: 300px;*/
         padding-top: 60px;
         padding-left: 320px;
-      
-      
       }
-
       #fim{
-
         padding-top: 50px;
       }
-
       #botaoUm{
         padding: 20px;
 
       }
       .nomes{
         padding-right: 850px;
-        
-     
       }
       .lulinha{
-        text-decoration: none;
+        text-decoration: none;  
+      } 
+      .imagens {
+        padding-left: 600px;
         
       }
-      
-      .imagens {
-        text-align: center;
-      }
-      
+      .carros2{
+        display: flex;
+       position: absolute; /* Faz a imagem ocupar a tela toda */
+       top: 0px;
+       left: 0;
+       width: 100%;
+       height: 100vh; /* Ocupa 100% da altura da tela */
+       object-fit: cover; /* Faz a imagem cobrir toda a área sem distorção */
+       z-index: -1; /* Coloca a imagem atrás de outros elementos */
+  }
 
-     
     </style>
   </head>
   <body>
-
     <nav>
       <div class="links">
         <ul class="nav-itens">
@@ -157,46 +125,36 @@
        <div id="texto">
         <p>Grave:</p>
         <p>Mais de 40 Mil Pessoas Morrem no Trânsito Todos os Anos - Será Que Você Está Contribuindo?</p>
-        <img class = "imagens" src="./B0B4E447-2D86-41D1-B6D7-4D09EF1254D1_page-0001-removebg-preview.png" width = "500px" >
+        <img class="carros2" src="./Imagemcarro.jpeg"  >
     </div>
-
-    
+    <img class = "imagens" src="./B0B4E447-2D86-41D1-B6D7-4D09EF1254D1_page-0001-removebg-preview.png" width = "1300px" >
     </section>
     <section id="meio">
       <div class="segundaParte">
-        <video src="./WhatsApp Video 2024-11-07 at 8.40.01 PM.mp4" width="700" height="400" controls>
+        <video class="video" src="./Imagem do WhatsApp2.jpg" width="700" height="400" controls>
             Seu browser não suporta esse video.
         </video>
     </div>
-
-
     <p class="d-inline-flex gap-1">
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleUm" aria-expanded="false" aria-controls="collapseExample">
             O que é
         </button>
       </p>
-      
-
       <p class="d-inline-flex gap-1">
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleDois" aria-expanded="false" aria-controls="collapseExample">
             Objetivo
         </button>
-      </p>
-      
-
+      </p> 
       <p class="d-inline-flex gap-1">
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleTres" aria-expanded="false" aria-controls="collapseExample">
             Por que Maio
         </button>
       </p>
-      
-
       <p class="d-inline-flex gap-1">
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleQuatro" aria-expanded="false" aria-controls="collapseExample">
             Por que Amarelo
         </button>
-      </p>
-      
+      </p>     
       <!-- Mensagens-->
       <div class="collapse" id="collapseExampleUm">
         <div class="card card-body">
@@ -310,8 +268,7 @@ O uso de álcool e drogas no trânsito distorce a percepção do motorista, torn
               </svg>
             </a>
         </div>
-
-      
+          
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
